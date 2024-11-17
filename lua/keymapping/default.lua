@@ -1,10 +1,5 @@
 vim.cmd([[
     inoremap <silent><expr> <TAB>
-    \ coc#pum#visible() ? coc#_select_confirm() :
-    \ coc#expandableOrJumpable() ?
-    \ "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-    \ CheckBackspace() ? "\<TAB>" :
-    \ coc#refresh()
 
     noremap <C-n> :NERDTreeToggle<CR>
     noremap <C-e> :NERDTreeFind<CR>
